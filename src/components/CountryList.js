@@ -22,7 +22,7 @@ function CountryList() {
 
   const countryList = useSelector((state) => {
     if (state.filterByRegion !== '' && countryListByName.length === 0) {
-      return state.countryFilteredByRegion;
+      return state.coutryFilteredByRegion;
     }
     if (countryListByName.length > 0) {
       return countryListByName
@@ -76,4 +76,4 @@ function CountryList() {
   )
 }
 
-export default CountryList
+export default CountryList;
